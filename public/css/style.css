@@ -1,0 +1,40 @@
+
+.card-body{
+    overflow: auto;
+}
+#myTable{
+    overflow: auto;
+}
+.card-content{
+    overflow: auto;
+}
+.table{
+    min-width: max-content;
+}
+#datafield{
+    min-width:max-content;
+}
+#title_{
+    text-align: center;
+    
+}
+.btn_del{
+    color: tomato;
+}
+.star{
+    color: red;
+    font-weight: 700;
+    margin-top: -10px;
+}
+.datafield{
+    background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+input{
+ display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
