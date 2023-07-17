@@ -38,3 +38,8 @@ input{
   padding: 14px;
   text-decoration: none;
 }
+.btn-close{
+    margin-left: 80%;
+    color: red;
+    background-color: red;
+}

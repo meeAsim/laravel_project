@@ -39,7 +39,7 @@ class UserController extends Controller
     public function destroy(string $id)
     {
         user::where('id','=',$id)->delete();
-        return redirect()->back()->with('success','User deleted Successfully');
+        return redirect()->back()->with('del','User deleted Successfully');
         // return redirect('index');
     }
 

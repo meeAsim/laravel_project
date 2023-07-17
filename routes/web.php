@@ -14,10 +14,8 @@ use App\Http\Controllers\userController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
+Route::get('/',[userController::class,'index']);
 Route::get('/index', [userController::class,'index'])->name('index');
 Route::post('save', [userController::class,'addData'])->name('save');
 Route::get('delete/{id}', [userController::class,'destroy'])->name('delete');

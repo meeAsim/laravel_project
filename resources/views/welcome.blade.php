@@ -9,6 +9,7 @@
         <!-- bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        
        
 
         <!-- Styles -->
@@ -28,11 +29,20 @@
             <div class="container-fluid">
                 <div class="container mt-3">
                     <h2 id="title_">Laravel project</h2>
-                    <button class="bt btn-success addBtn" id="addrow" name="addnew">Add New</button>
+                    <button class="bt btn-primary addBtn" id="addrow" name="addnew">Add New</button>
                     @if(Session::has('success'))
                     <div class="alert alert-success">
                         {{Session::get('success')}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
+                   
+                    @endif 
+                    @if(Session::has('del'))
+                    <div class="alert alert-danger">
+                        {{Session::get('del')}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    
                     @endif            
                     <div class="card-content">
                         <div class="card-body">
